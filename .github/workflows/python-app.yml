@@ -10,7 +10,9 @@ jobs:
         with:
           python-version: '3.x'
 
-
+      - name: Install dependencies
+        run: |
+          pip install os
 
       - name: Run Python script with secret
         env:
