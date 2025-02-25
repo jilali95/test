@@ -16,5 +16,5 @@ jobs:
 
       - name: Run Python script with secret
         env:
-          SECRET_KEY: ${{ secrets.test }}
+          SECRET_KEY: ${{ secrets.TEST }}
         run: python test.py
