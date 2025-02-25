@@ -21,9 +21,9 @@ jobs:
 
       - name: Install dependencies
         run: |
-          
-      - name: Run Python script
-          
-          test: ${{ secrets.test }}
+          pip install -r requirements.txt
 
+      - name: Run Python script
         run: python test.py
+        env:
+          TEST_SECRET: ${{ secrets.test }}
